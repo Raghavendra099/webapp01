@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare Health Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .emergency-banner {
+            background-color: #dc3545;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s;
+        }
+        .appointment-section {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Emergency Contact Banner -->
+    <div class="emergency-banner text-white py-2">
+        <div class="container text-center">
+            <i class="fas fa-phone-alt me-2"></i> Emergency: <strong>911</strong> | 24/7 Helpline: <strong>1-800-MEDCARE</strong>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-hospital text-primary"></i> MedCare
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#doctors">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#departments">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#appointment">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Your Health Is Our Priority</h1>
+                    <p class="lead mb-4">Providing comprehensive healthcare services with cutting-edge technology and experienced medical professionals.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+                        <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-md text-primary fa-3x mb-3"></i>
+                            <h4>Expert Doctors</h4>
+                            <p>Experienced medical professionals dedicated to your care.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock text-primary fa-3x mb-3"></i>
+                            <h4>24/7 Service</h4>
+                            <p>Round-the-clock medical care for emergencies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hospital text-primary fa-3x mb-3"></i>
+                            <h4>Modern Facility</h4>
+                            <p>State-of-the-art medical equipment and facilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-ambulance text-primary fa-3x mb-3"></i>
+                            <h4>Emergency Care</h4>
+                            <p>Immediate response for emergency situations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Services</h2>
+                <p class="lead text-muted">Comprehensive healthcare solutions for you and your family</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 service-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="General Medicine">
+                        <div class="card-body">
+                            <h4>General Medicine</h4>
+                            <p>Comprehensive medical care for adults including diagnosis, treatment, and prevention of diseases.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 service-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Pediatrics">
+                        <div class="card-body">
+                            <h4>Pediatrics</h4>
+                            <p>Specialized medical care for infants, children, and adolescents.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 service-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Cardiology">
+                        <div class="card-body">
+                            <h4>Cardiology</h4>
+                            <p>Expert care for heart-related conditions and cardiovascular health.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Doctors</h2>
+                <p class="lead text-muted">Meet our team of experienced medical professionals</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5>Dr. John Smith</h5>
+                            <p class="text-muted">Cardiologist</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                                <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5>Dr. Sarah Johnson</h5>
+                            <p class="text-muted">Pediatrician</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                                <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5>Dr. Michael Brown</h5>
+                            <p class="text-muted">Neurologist</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                                <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Doctor">
+                        <div class="card-body">
+                            <h5>Dr. Emily Davis</h5>
+                            <p class="text-muted">Dermatologist</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                                <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="appointment-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h3 class="text-center mb-4">Book an Appointment</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-select">
+                                            <option selected>Select Department</option>
+                                            <option>Cardiology</option>
+                                            <option>Neurology</option>
+                                            <option>Pediatrics</option>
+                                            <option>Dermatology</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-select">
+                                            <option selected>Select Time</option>
+                                            <option>09:00 AM</option>
+                                            <option>10:00 AM</option>
+                                            <option>11:00 AM</option>
+                                            <option>02:00 PM</option>
+                                            <option>03:00 PM</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="4" placeholder="Additional Message"></textarea>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Book Appointment</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5><i class="fas fa-hospital"></i> MedCare</h5>
+                    <p>Providing quality healthcare services for over 20 years.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#services" class="text-white">Our Services</a></li>

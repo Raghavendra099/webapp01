@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Business Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .navbar { background-color: #1a237e; }
+        .hero-section { min-height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/1080'); }
+        .service-card:hover { transform: translateY(-5px); transition: all 0.3s; }
+        footer { background-color: #1a237e; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">BusinessName</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Signin">signin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <!-- Carousel -->
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="healthcare1.jpeg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption">
+                        <h2>Welcome to Our Business</h2>
+                        <p>Delivering Excellence in Every Service</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="download1.jpeg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption">
+                        <h2>Professional Solutions</h2>
+                        <p>Tailored to Your Needs</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Digital-Health-1.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption">
+                        <h2>Expert Team</h2>
+                        <p>Ready to Serve You</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel";data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <p class="fs-1">Healthcare</p>
+        <p class="text-left">Center aligned text on all viewport sizes.</p>
+        <p class="text-left">Health care is different from other goods and services: the health care product is ill-defined, the outcome of care is uncertain, large segments of the industry are dominated by nonprofit providers, and payments are made by third parties such as the government and private insurers. Many of these factors are present in other industries as well, but in no other industry are they all present. It is the interaction of these factors that tends to make health care unique.
+
+Even so, it is easy to make too much of the distinctiveness of the health care industry. Various players in the industry—consumers and providers, to name two—respond to incentives just as in other industries.</p>
+        
+        <p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+        <p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+        <p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+        <p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+        <p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+        <!-- Featured Cards -->
+        <div class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow service-card">
+                        <img src="mahesh.jpg" class="card-img-top" alt="Mahesh LB">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Quality Service</h5>
+                            <p class="card-text">Experience excellence with our premium services designed for your success.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal1">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow service-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Raghavendra">
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Team</h5>
+                            <p class="card-text">Our professional team brings years of experience to every project.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal2">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow service-card">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Amith B">
+                        <div class="card-body">
+                            <h5 class="card-title">Innovation</h5>
+                            <p class="card-text">Stay ahead with our innovative solutions and cutting-edge technology.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#serviceModal3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Delivering excellence in business solutions since 2000.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#services" class="text-white">Services</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 BusinessName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Service Modal 1 -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quality Service</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Detailed information about our quality service and how it can benefit you.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Modal 2 -->
+    <div class="modal fade" id="serviceModal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Expert Team</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Learn more about our expert team and their qualifications.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Modal 3 -->
+    <div class="modal fade" id="serviceModal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Innovation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Discover our innovative solutions and technologies.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- About Modal -->
+                <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header bg-primary text-white">
+                                <h5 class="modal-title" id="aboutModalLabel">About Our Company</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <!-- Modal Body -->
+                            <div class="modal-body">
+                                <!-- Company Overview -->
+                                <div class="mb-4">
+                                    <h4 class="text-primary">Our Story</h4>
+                                    <img src="/api/placeholder/800/400" class="img-fluid rounded mb-3" alt="Company History">
+                                    <p>Founded in 2000, our company has grown from a small local business to a leading provider of innovative solutions. We've maintained our commitment to excellence while expanding our services to meet the evolving needs of our clients.</p>
+                                </div>
+            
+                                <!-- Mission & Vision -->
+                                <div class="mb-4">
+                                    <h4 class="text-primary">Mission & Vision</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Our Mission</h5>
+                                                    <p class="card-text">To deliver exceptional value to our clients through innovative solutions and unparalleled service quality.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card h-100">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Our Vision</h5>
+                                                    <p class="card-text">To be the global leader in providing transformative business solutions while maintaining the highest standards of excellence.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Core Values -->
+                                <div class="mb-4">
+                                    <h4 class="text-primary">Our Core Values</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="card text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="fas fa-handshake fs-2 text-primary mb-2"></i>
+                                                    <h5>Integrity</h5>
+                                                    <p>We conduct business with the highest ethical standards.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="fas fa-lightbulb fs-2 text-primary mb-2"></i>
+                                                    <h5>Innovation</h5>
+                                                    <p>We continuously seek new ways to improve and evolve.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card text-center h-100">
+                                                <div class="card-body">
+                                                    <i class="fas fa-users fs-2 text-primary mb-2"></i>
+                                                    <h5>Teamwork</h5>
+                                                    <p>We collaborate to achieve extraordinary results.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Team Section -->
+                                <div class="mb-4">
+                                    <h4 class="text-primary">Our Leadership Team</h4>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="card text-center">
+                                                <img src="/api/placeholder/300/300" class="card-img-top" alt="CEO">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">John Doe</h5>
+                                                    <p class="card-text">CEO & Founder</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card text-center">
+                                                <img src="/api/placeholder/300/300" class="card-img-top" alt="CTO">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Jane Smith</h5>
+                                                    <p class="card-text">Chief Technology Officer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card text-center">
+                                                <img src="/api/placeholder/300/300" class="card-img-top" alt="COO">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Mike Johnson</h5>
+                                                    <p class="card-text">Chief Operations Officer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <a href="#contact" class="btn btn-primary" data-bs-dismiss="modal">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Required Scripts -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+            </body>
+            </html>
